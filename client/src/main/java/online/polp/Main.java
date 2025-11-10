@@ -20,6 +20,8 @@ public class Main {
         BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
         PrintWriter out = new PrintWriter(clientSocket.getOutputStream(), true);
 
+        System.out.println("Login with LOGIN <yourusername>, then you can use the following commands:\nADD <textToAdd>\nLIST\nDEL <id>");
+
         try {
             //noinspection InfiniteLoopStatement
             while (true) {
